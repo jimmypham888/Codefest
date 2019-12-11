@@ -1,0 +1,72 @@
+<html>
+
+<head>
+	<title>gst-codefest2019: test api</title>
+	<script src="socket.io.js"></script>
+	<script src="main.js"></script>
+</head>
+<style>
+	.info {
+		width: 30%;
+		height: 100vh;
+		margin: 0 auto;
+		text-transform: uppercase;
+	}
+
+	.info p {
+		text-transform: capitalize;
+	}
+
+	.info h1,
+	.info h2 {
+		text-align: center;
+	}
+
+	.info div {
+		width: 50%;
+		float: left;
+		height: 100%;
+	}
+
+	.info div:nth-child(1) {
+		text-align: right;
+		background: #0048FF;
+	}
+
+	.info div:nth-child(1) {
+		text-align: right;
+		background: #00F40B;
+	}
+</style>
+
+<body>
+	<div class="info">
+		<h1>gst codefest 2019 </h1>
+		<h2>kẻ phản bội</h2>
+		<div>
+			<p>server connecting status: <label id="connected-status" style="color:red">n/a</label></p>
+			<p>socket status: <label id="socket-status" style="color: red">n/a</label></p>
+		</div>
+		<div>
+			<p>joined game status: <label id="joingame-status" style="color: red">n/a</label></p>
+			<p>ticktack game status: <label id="ticktack-status" style="color: red">n/a</label></p>
+		</div>
+	</div>
+	<!-- <script src="main.js"></script> -->
+	<script type='text/javascript' src='astar.js'></script>
+	<!-- <script type="text/javascript">
+		var graph = new Graph([
+			[1, 2, 3, 1],
+			[1, 1, 0, 1],
+			[1, 1, 1, 1]
+		]);
+		var start = graph.grid[0][0];
+		var end = graph.grid[2][3];
+		var result = astar.search(graph, start, end);
+		for(var i=0; i<result.length;++i){
+			console.log(result[i].x+" "+result[i].y);
+		}
+	</script> -->
+</body>
+
+</html>
